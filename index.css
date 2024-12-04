@@ -1,0 +1,673 @@
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik+Glitch+Pop&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 3.5%;
+    background-color: #2d5e24;
+    background-image: url('https://www.institutoclaro.org.br/educacao/wp-content/uploads/sites/2/2022/09/caatinga-fundo-1-1-1.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 4vw;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 4vw;
+    top: 72px;
+    left: 67px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginBtn {
+    all: unset;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+    z-index: 1;
+}
+
+.menu.open {
+    width: 22%;
+}
+
+.menu a {
+    padding: 8px 20px;
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+    margin-left: 10px;
+    display: block;
+    transition: 0.3s;
+    text-align: left;
+    margin-left: -1%;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.menu a:hover {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5vw;
+    color: white;
+    cursor: pointer;
+}
+
+.me {
+    margin-top: 1.2%;
+}
+
+#super {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#ola,
+#ola1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: #1e3e18;
+    transform: scaleX(1.3);
+    margin: 0;
+}
+
+#ola {
+    font-size: 4vw;
+    margin-left: 84%;
+    margin-bottom: -12%;
+}
+
+#ola1 {
+    font-size: 4vw;
+    margin-left: 55%;
+    margin-bottom: -5%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bool {
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 1.5%;
+}
+
+.bool img {
+    width: 83%;
+    height: 98%;
+    margin-left: 6%;
+    object-fit: cover;
+    margin-bottom: 2%;
+}
+
+.background {
+    width: 55.6%;
+    height: 68.5vh;
+    background-color: #5A7D5A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -1%;
+}
+
+.fundo {
+    text-align: center;
+    font-size: 2vw;
+    color: #fff;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+#lorem {
+    max-width: 700px;
+    text-align: justify;
+    font-size: 1.4vw;
+    margin: 0 40px;
+    color: #fff;
+}
+
+.principal {
+    width: 430px;
+    height: 72%;
+    background: transparent;
+    border: 2px solid #515151;
+    backdrop-filter: (20px);
+    background-color: #0e0e0e;
+    border-radius: 10px;
+    padding: 30px 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.principal::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.principal h2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.fechar {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form .campo {
+    height: 50px;
+    margin: 18px 0;
+    margin-bottom: 35px;
+}
+
+.campo label {
+    color: #fff;
+    margin-left: 3%;
+}
+
+.campo input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    transition: all 300ms ease;
+}
+
+.campo input:focus {
+    border: 2px solid #2d5e24;
+    box-shadow: 0 3px 5px rgba(56, 153, 77, 0.9);
+}
+
+.duda {
+    height: 40px;
+    width: 95%;
+    margin-left: 2.7%;
+    margin-top: 5%;
+    background-color: #2d5e24;
+    box-shadow: 0 0 5px rgba(56, 153, 77, 0.9);
+    border: 2px solid #2d5e24;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.duda:hover {
+    background-color: white;
+    color: #222121;
+}
+
+.termos {
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+}
+
+#checar {
+    margin: 0;
+    padding: 0;
+    width: 20px;
+}
+
+#cadastrar {
+    display: inline-block;
+    margin-top: -15px;
+    font-size: 15px;
+    color: #9d6df9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(to right top, #da7de3);
+    outline: none;
+    border: none;
+}
+
+
+.opa {
+    width: 420px;
+    background: transparent;
+    border: 2px solid #515151;
+    backdrop-filter: (20px);
+    background-color: #0e0e0e;
+    border-radius: 10px;
+    padding: 30px 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.opa::backdrop {
+    background-color: rgba(0, 0, 0, 0.9)
+}
+
+h2 {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 36px;
+    text-align: center;
+}
+
+.senhaa {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.senhaa input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    transition: all 300ms ease;
+}
+
+.senhaa input:focus {
+    border: 2px solid #2d5e24;
+    box-shadow: 0 3px 5px rgba(56, 153, 77, 0.9);
+}
+
+.senhaa input::placeholder {
+    color: #fff;
+}
+
+.icon {
+    position: absolute;
+    right: 24px;
+    bottom: 15px;
+    color: #fff;
+}
+
+.senhaa a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+
+.senhaa a:hover {
+    text-decoration: underline;
+}
+
+.botao {
+    width: 100%;
+    height: 40px;
+    background-color: #2d5e24;
+    box-shadow: 0 0 5px rgba(56, 153, 77, 0.9);
+    border: 2px solid #2d5e24;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+}
+
+.botao:hover {
+    background-color: white;
+    color: #222121;
+}
+
+#naoesta {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+}
+
+#cadastrar {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+#cadastrar:hover {
+    text-decoration: underline;
+}
+
+#xiss {
+    margin-left: 97%;
+    font-size: 1.5vw;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5A7D5A;
+    list-style: none;
+    align-items: center;
+    font-size: 2vw;
+    width: 100%;
+    height: 14.3vh;
+}
+
+ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    padding: 5px 10px;
+}
+
+ul li a:hover {
+    transform: translateY(-5px);
+}
+
+
+.bioma {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-top: 5%;
+}
+
+.rasteira img {
+    height: auto;
+    width: 90%;
+    margin-left: 3%;
+
+}
+
+.rasteira {
+    background-color: #5A7D5A;
+    width: 60%;
+    padding: 20px;
+    position: relative;
+}
+
+.viola {
+    width: 50%;
+    padding: 20px;
+    color: #2F4F4F;
+    border: 2px solid #5A7D5A;
+    border-left: none;
+}
+
+.rasteira h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.viola h1 {
+    font-size: 2em;
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#vaisaber {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.viola p {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 7%;
+}
+
+
+.viola h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.viola p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.map {
+    width: 100%;
+    max-height: 660px;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    color: #2F4F4F;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem
+    }
+
+    .hamburger {
+        top: 3%;
+    }
+
+    .opa {
+        top: 30%;
+        width: 50%;
+        height: 42%;
+    }
+
+    #xiss {
+        font-size: 20px;
+    }
+
+    ul {
+        font-size: 3vw;
+        height: auto;
+        padding: 2%;
+    }
+
+    ul li a {
+        text-decoration: none;
+        display: inline-block;
+        transition: transform 0.3s ease;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    /* Precisa ver o por que saporra não ta funcionando */
+    ul li a:hover {
+        transform: translateY(-5px);
+    }
+
+    #ola {
+        margin-left: 82%;
+        bottom: 1%;
+    }
+
+    #ola1 {
+        margin-left: 60%;
+    }
+
+    .bool {
+        width: 45%;
+        height: auto;
+    }
+
+    .background {
+        width: 51.5%;
+        height: 42vh;
+    }
+
+    .fundo {
+        font-size: 1.7rem;
+    }
+
+    #lorem {
+        font-size: 14px;
+        display: inline-block;
+        bottom: 2%;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .background .fundo {
+        font-size: 1.5rem;
+    }
+
+    .viola {
+        border-bottom: none;
+    }
+
+    .rasteira h2 {
+        padding-left: 35%;
+        color: #fff;
+    }
+
+    .viola h1 {
+        margin-left: 12%;
+        padding-bottom: 5%;
+    }
+
+    .viola h2 {
+        font-size: 30px;
+    }
+
+    .viola span {
+        display: none;
+    }
+
+    .menu.open {
+        width: 25%;
+    }
+
+    .menu a {
+        font-size: 21px;
+    }
+
+    .principal {
+        height: 52%;
+        width: 50%;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,144 @@
+/* Resetando as margens, preenchimento e configurando a caixa de modelo para todos os elementos */
+* {
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+    box-sizing: border-box; /* Faz com que o padding e borda sejam incluídos no tamanho do elemento */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão da página */
+}
+
+/* Estilo geral para o body (fundo, alinhamento e altura mínima) */
+body {
+    background-color: #83a084; /* Cor de fundo do body */
+    background-position: center; /* Alinha o fundo ao centro */
+    background-repeat: no-repeat; /* Impede que o fundo seja repetido */
+    background-size: cover; /* Faz com que o fundo cubra toda a tela */
+    display: flex; /* Usa flexbox para o layout */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    padding: 20px; /* Adiciona um preenchimento de 20px em torno da página */
+    min-height: 100vh; /* Garante que o body ocupe ao menos 100% da altura da tela */
+}
+
+/* Classe para a primeira metade da tela (50% de largura) com flutuação */
+.w50 {
+    width: 50%; /* Largura de 50% */
+    float: left; /* Faz com que a div flutue à esquerda */
+    padding-right: 15px; /* Adiciona um preenchimento à direita */
+}
+
+/* Estilo para a caixa principal que contém o formulário e a imagem */
+.box {
+    display: flex; /* Usa flexbox para organizar os itens em linha */
+    width: 930px; /* Largura fixa de 930px para a caixa */
+}
+
+/* Estilo para o formulário dentro da caixa */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.4); /* Cor de fundo com opacidade */
+    backdrop-filter: blur(40px); /* Aplica um desfoque no fundo */
+    padding: 30px 40px; /* Adiciona preenchimento interno */
+    width: 50%; /* Largura de 50% da caixa */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin-left: 25%; /* Centraliza a caixa, com margem à esquerda */
+}
+
+/* Estilo para o título dentro do formulário */
+.form-box h2 {
+    font-size: 30px; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estilo para o formulário dentro da .form-box */
+.form-box form {
+    margin: 20px 0; /* Margem superior e inferior de 20px */
+}
+
+/* Estilo para cada grupo de input dentro do formulário */
+form .input-group {
+    margin-bottom: 15px; /* Margem inferior de 15px entre os inputs */
+}
+
+/* Estilo para os rótulos (labels) dos inputs */
+.form .input-group label {
+    color: #928585; /* Cor cinza-claro para os rótulos */
+    font-weight: bold; /* Negrito para os rótulos */
+    display: block; /* Faz com que os rótulos ocupem uma linha inteira */
+    margin-bottom: 5px; /* Margem inferior de 5px para o espaçamento */
+}
+
+/* Estilo para os campos de input */
+form .input-group input {
+    width: 100%; /* Largura de 100% para que o campo ocupe toda a largura do contêiner */
+    height: 47px; /* Altura do campo */
+    background-color: rgba(255, 255, 255, 0.32); /* Cor de fundo com opacidade */
+    border-radius: 20px; /* Bordas arredondadas */
+    outline: none; /* Remove a borda de foco padrão do navegador */
+    border: 2px solid transparent; /* Borda transparente por padrão */
+    padding: 15px; /* Preenchimento interno de 15px */
+    font-size: 15px; /* Tamanho da fonte */
+    color: #4e4e4e; /* Cor do texto */
+    transition: all 0.4s ease; /* Transição suave para os efeitos de foco */
+}
+
+/* Estilo para o input ao receber foco (clicado ou selecionado) */
+form .input-group input:focus {
+    border-color: #2d5e24; /* Cor da borda ao focar no campo */
+}
+
+/* Estilo para o botão dentro do formulário */
+form .input-group button {
+    width: 100%; /* Largura de 100% para o botão ocupar toda a largura */
+    height: 47px; /* Altura do botão */
+    background: #2d5e24; /* Cor de fundo do botão */
+    outline: none; /* Remove a borda de foco padrão */
+    border: none; /* Remove a borda */
+    margin-top: 15px; /* Margem superior de 15px para o espaçamento */
+    color: #ffffff; /* Cor do texto do botão */
+    cursor: pointer; /* Altera o cursor para pointer ao passar sobre o botão */
+    font-size: 17px; /* Tamanho da fonte do texto */
+}
+
+/* Media Query para telas com largura máxima de 930px */
+@media (max-width:930px) {
+    .img-box {
+        display: none; /* Oculta a imagem ao diminuir a tela */
+    }
+    .box {
+        width: 700px; /* Reduz a largura da caixa para 700px */
+    }
+    .form-box {
+        width: 100%; /* A form-box ocupa 100% da largura */
+        border-radius: 20px; /* Bordas arredondadas maiores */
+    }
+}
+
+/* Media Query para telas com largura máxima de 500px */
+@media (max-width:500px) {
+    .w50 {
+        width: 100%; /* Ajusta a largura da div .w50 para 100% */
+        padding: 0; /* Remove o preenchimento da div .w50 */
+    }
+}
+
+/* Estilo para o ícone de fechar (id xiss) */
+#xiss {
+    font-size: 20px; /* Tamanho da fonte */
+    border-radius: 10px; /* Bordas arredondadas */
+    width: 30px; /* Largura de 30px */
+}
+
+
+
+/* Estilo para a parte superior direita do formulário (canto) */
+.form-box .canto {
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    justify-content: end; /* Alinha o conteúdo à direita */
+}
+
+#cadArv{
+    border-radius: 20px;
+    background-color: black;  
+}
+#cadArv:hover{
+    background-color: green;
+}

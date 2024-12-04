@@ -1,0 +1,96 @@
+* {
+  margin: 0; /* Remove margens padrão de todos os elementos */
+  padding: 0; /* Remove preenchimento interno padrão de todos os elementos */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo do tamanho total */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  color: #333; /* Define a cor do texto como cinza escuro */
+  background-color: #f9f9f9; /* Define o fundo da página como cinza claro */
+}
+
+.carousel-inner {
+  width: 100vw; /* Define a largura como 100% da janela de visualização */
+  height: 350px; /* Define uma altura fixa para o carrossel */
+  overflow: hidden; /* Oculta conteúdo que ultrapassa os limites */
+  background-color: #2d5e24; /* Define fundo verde escuro */
+}
+
+.carousel-item img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+  height: 350px; /* Define uma altura fixa para as imagens */
+}
+
+.card {
+  border: 1px solid green; /* Adiciona uma borda verde ao cartão */
+  transition: transform 0.3s; /* Adiciona uma transição suave ao transformar o elemento */
+}
+
+.card:hover {
+  box-shadow: 5px 5px 50px rgb(49, 255, 145); /* Aplica sombra verde brilhante ao passar o mouse */
+  transform: scale(1.05); /* Aumenta levemente o tamanho do cartão */
+}
+
+.card-title {
+  font-weight: bold; /* Define o título do cartão em negrito */
+}
+
+.card-body {
+  text-align: center; /* Centraliza o conteúdo do corpo do cartão */
+}
+
+.container h2 {
+  margin-bottom: 20px; /* Adiciona espaçamento inferior ao título */
+  color: #007B5E; /* Define a cor do título como verde escuro */
+}
+
+.img-fluid {
+  margin-bottom: 15px; /* Adiciona espaçamento inferior à imagem */
+  border-radius: 8px; /* Arredonda os cantos da imagem */
+  transition: transform 0.3s; /* Suaviza transformações visuais */
+}
+
+.img-fluid:hover {
+  transform: scale(1.1); /* Amplia a imagem ao passar o mouse */
+}
+
+nav {
+  padding: 20px; /* Adiciona espaçamento interno ao nav */
+  background-color: transparent; /* Deixa o fundo transparente */
+  position: absolute; /* Posiciona o nav de forma absoluta */
+  left: 70%; /* Move o nav para 70% da largura da página */
+  z-index: 1; /* Garante que o nav fique acima de outros elementos */
+}
+
+ul {
+  display: flex; /* Organiza os itens em linha horizontal */
+}
+
+nav li {
+  display: inline; /* Garante que os itens fiquem lado a lado */
+}
+
+nav li a {
+  color: #fff; /* Define a cor do texto como branco */
+  text-decoration: none; /* Remove sublinhado dos links */
+  padding: 15px; /* Adiciona espaçamento interno ao link */
+  font-size: 22px; /* Define o tamanho da fonte */
+}
+
+nav li a:hover {
+  background: linear-gradient(198deg, #689a61 1%, #2d5e24); /* Aplica gradiente no fundo ao passar o mouse */
+  border-radius: 30px; /* Arredonda o fundo do link */
+}
+
+@media (max-width: 768px) {
+  nav {
+    left: 50%; /* Centraliza o nav em telas menores */
+  }
+  ul {
+    display: flex; /* Mantém os itens organizados em linha horizontal */
+  }
+  nav li {
+    display: inline; /* Garante que os itens fiquem lado a lado */
+  }
+}

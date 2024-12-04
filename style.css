@@ -1,0 +1,184 @@
+* {
+  margin: 0; /* Remove margens padrão de todos os elementos */
+  padding: 0; /* Remove preenchimento padrão de todos os elementos */
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no cálculo do tamanho total */
+}
+
+body {
+  margin: 0; /* Remove margens padrão do corpo */
+  font-family: 'Roboto', sans-serif; /* Define a fonte padrão como Roboto */
+  background-color: #141414; /* Define o fundo da página como preto */
+  color: #fff; /* Define a cor do texto como branco */
+}
+
+.navbar {
+  display: flex; /* Define um layout flexível para o menu */
+  justify-content: space-between; /* Espaça os itens do menu igualmente */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  padding: 20px; /* Adiciona espaçamento interno ao menu */
+  background-color: #141414; /* Define o fundo do menu como preto */
+}
+
+.navbar img {
+  width: 75px; /* Define a largura da imagem do logo */
+  height: auto; /* Ajusta a altura automaticamente */
+  max-height: 75px; /* Limita a altura máxima da imagem */
+  margin-left: 1%; /* Adiciona margem à esquerda da imagem */
+}
+
+.navbar ul {
+  list-style: none; /* Remove os marcadores padrão da lista */
+  display: flex; /* Organiza os itens da lista em linha */
+  margin-right: 2%; /* Adiciona margem à direita do menu */
+  transition: transform 0.3s ease; /* Adiciona transição suave ao transformar o elemento */
+}
+
+.navbar ul li {
+  display: inline; /* Garante que os itens fiquem lado a lado */
+}
+
+.navbar ul li a {
+  color: #fff; /* Define a cor dos links como branca */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: 500; /* Define peso médio da fonte */
+  font-size: 20px; /* Define o tamanho da fonte */
+}
+
+.navbar ul:hover {
+  transform: translateY(-5px); /* Move o menu para cima ao passar o mouse */
+}
+
+ul#home {
+  margin-left: auto; /* Empurra o menu para a extremidade direita */
+}
+
+li {
+  margin: 0 10px; /* Adiciona espaçamento entre os itens do menu */
+}
+
+a {
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: black; /* Define a cor dos links como preta */
+  font-weight: bold; /* Define os links em negrito */
+}
+
+.hero {
+  position: relative; /* Define a posição como relativa para elementos internos */
+  height: 80vh; /* Define altura de 80% da janela de visualização */
+  background: url('https://upload.wikimedia.org/...') no-repeat center center/cover; /* Define uma imagem de fundo ajustada ao contêiner */
+}
+
+.hero .content {
+  position: absolute; /* Posiciona o conteúdo de forma absoluta dentro do hero */
+  bottom: 50px; /* Move o conteúdo para 50px acima da base */
+  left: 50px; /* Move o conteúdo 50px à direita do canto esquerdo */
+}
+
+.hero .content h1 {
+  font-size: 3rem; /* Define o tamanho do texto do título */
+  margin: 0; /* Remove margens */
+}
+
+.hero .content p {
+  font-size: 1.2rem; /* Define o tamanho do texto do parágrafo */
+  margin: 10px 0; /* Adiciona espaçamento vertical */
+  margin-right: 10%; /* Adiciona margem à direita */
+}
+
+.seta {
+  margin-top: 5vh; /* Adiciona margem superior em 5% da altura da janela */
+  display: flex; /* Define layout flexível */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave ao transformar */
+}
+
+.seta:hover {
+  transform: translateY(5px); /* Move a seta para baixo ao passar o mouse */
+}
+
+.hero .content {
+  padding: 10px 20px; /* Adiciona espaçamento interno ao conteúdo */
+  color: #fff; /* Define a cor do texto como branca */
+  border: none; /* Remove bordas */
+  cursor: pointer; /* Muda o cursor para pointer */
+  font-size: 1rem; /* Define o tamanho do texto */
+}
+
+.chapeu {
+  padding: 20px 50px; /* Adiciona espaçamento interno */
+  margin-top: 3%; /* Adiciona margem superior */
+}
+
+.chapeu h2 {
+  font-size: 1.5rem; /* Define o tamanho do texto do título */
+  margin-bottom: 20px; /* Adiciona espaçamento inferior */
+}
+
+.chapeu .preto {
+  display: flex; /* Define layout flexível */
+  gap: 10px; /* Adiciona espaçamento entre os itens */
+  overflow-x: auto; /* Permite rolagem horizontal */
+}
+
+.chapeu .preto img {
+  width: 240px; /* Define largura das imagens */
+  height: 300px; /* Define altura das imagens */
+  object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorção */
+}
+
+.abaixo {
+  background-color: #141414; /* Define fundo preto */
+  padding: 20px 50px; /* Adiciona espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+.abaixo h2 {
+  font-size: 2em; /* Define o tamanho do título */
+  margin: 20px 0; /* Adiciona espaçamento vertical */
+  font-family: 'Times New Roman', Times, serif; /* Define uma fonte serifada */
+}
+
+.abaixo a {
+  font-size: 1.5rem; /* Define o tamanho do texto dos links */
+  color: rgb(42, 42, 184); /* Define a cor dos links como azul */
+  text-decoration: none; /* Remove sublinhado */
+  display: inline-block; /* Exibe como bloco inline */
+  transition: transform 0.3s ease; /* Adiciona transição suave ao transformar */
+  font-family: 'Times New Roman', Times, serif; /* Define uma fonte serifada */
+}
+
+.abaixo a:hover {
+  transform: translateY(-5px); /* Move o link para cima ao passar o mouse */
+}
+
+.cores {
+  display: flex; /* Organiza os elementos em linha */
+  justify-content: space-between; /* Espaça os elementos igualmente */
+  margin-top: 2%; /* Adiciona margem superior */
+  padding: 3%; /* Adiciona espaçamento interno */
+}
+
+.cores div {
+  width: 30px; /* Define largura dos círculos */
+  height: 30px; /* Define altura dos círculos */
+  border-radius: 50%; /* Torna os elementos circulares */
+}
+
+.cor1 { background-color: #B7E4B7; } /* Define cor verde clara */
+.cor2 { background-color: #A2D9A6; } /* Define cor verde média */
+.cor3 { background-color: #88D88A; }
+.cor4 { background-color: #74D36B; }
+.cor5 { background-color: #63C750; }
+.cor6 { background-color: #4AB736; }
+.cor7 { background-color: #4AB736; }
+.cor8 { background-color: #338D24; }
+.cor9 { background-color: #277222; }
+.cor10 { background-color: #1A5619; }
+
+@media (max-width: 768px) {
+  .content p {
+      text-align: justify; /* Alinha o texto dos parágrafos em dispositivos menores */
+  }
+  .hero {
+      height: 65vh; /* Reduz a altura do hero em dispositivos menores */
+  }
+}
