@@ -142,3 +142,8 @@ form .input-group button {
 #cadArv:hover{
     background-color: green;
 }
+
+#ponto{
+margin-right: 90%;
+color: #000;
+}
